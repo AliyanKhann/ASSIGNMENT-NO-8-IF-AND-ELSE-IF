@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./practice/index.html">practice</a>
+        <script>
+			//Q1 ABC upper and abc lower
+			var num1=+prompt("enter 60 to uppercase and 97 to lower case")
+			var num2=+prompt("enter last 90 to uppercase and 122 to lower case")
+		for(let i = num1; i <= num2; i++){
+  console.log(String.fromCharCode(i));
+}
+
+
+   //Q2 two interger equal
+
+   var intreger1= +prompt("Q2 greater than \n enter any number")
+   var intreger2=+prompt("enter second number")
+   if(intreger1<intreger2){
+	alert(intreger1+ " is less than " +intreger2)
+   }
+   else if (intreger1>intreger2){
+	alert(intreger1+ " is greater than " +intreger2)
+   }
+else("ERROR")
+
+
+// Q 3 negative zero positive
+
+var number=+prompt("enter any number positve negative")
+if(number>0){
+	alert("this number is positve")
+}
+else if(number<0){
+	alert("this number is negative number")
+}
+else if(number==0){
+	alert("this is zerro number")
+}
+
+//Q4 vowel 
+var str=['a','e','i','o','u']
+var strname1=prompt("ENTER FIRST LETTER STRING")
+
+for(i=0;i<str.length;i++){
+	if(strname1==str[i]){
+		alert(strname1+" its vowel TRUE")
+		break
+	}
+	else{alert(strname1+" not vowel FALSE")
+	break}
+}
+
+//	Q5 enter password
+
+var pass="12345678"
+var email= prompt("ENTER EMAIL ADDRESS")
+var pass2=prompt("ENTER YOUR PASSWORD")
+if(pass2==""){
+var pass3=prompt("PLEASE ENTER YOUR PASSWORD!")
+if(pass3==pass){
+	alert("CORRECT YOUR PASSWORD IS MATCH")
+
+}
+else(alert("your password incorrect"))
+}
+ 
+else if(pass2==pass){
+	alert("CORRECT YOUR PASSWORD MATCH")
+}
+else if(pass2 !== pass ){
+	var pass4=prompt("please enter correct password")
+	if(pass4!==pass){
+		var pass5=prompt("please enter correct password")
+		if(pass5!==pass){
+		var pass6=prompt("please enter correct password")
+		if(pass6!==pass){
+			alert("your passwor is block\nplease contact us to 0000")
+		}
+
+		}}
+}
+
+
+//Q6 problem fixing
+
+var greeting= "";
+
+var hour = 20;
+if (hour < 18) 
+greeting = "Good day";
+else
+greeting = "Good evening";
+
+console.log(greeting)
+
+
+//Q7 clock
+
+var clock= prompt("what your time in your watch")
+if(clock==0000 && clock<=1200){
+	alert(clock+ " A.M good mornig sir")
+}
+else if(clock>1200 && clock<=1700){
+	alert(clock+ " P.M good afternoon sir")
+}
+else if(clock>1700 && clock<=2100){
+	alert(clock+ " P.M  good evening sir")
+}
+else if(clock>2100 && clock<=2359){
+	alert(clock+ " P.M  good night sir")
+}
+
+		</script>
+
+
+    
+</body>
+</html>
